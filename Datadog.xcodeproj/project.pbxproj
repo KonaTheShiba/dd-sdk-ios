@@ -1,0 +1,1153 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"Datadog::DatadogPackageTests::ProductTarget" /* DatadogPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_188 /* Build configuration list for PBXAggregateTarget "DatadogPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_191 /* PBXTargetDependency */,
+			);
+			name = DatadogPackageTests;
+			productName = DatadogPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		OBJ_135 /* DateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* DateProvider.swift */; };
+		OBJ_136 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* FileReader.swift */; };
+		OBJ_137 /* FileWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* FileWriter.swift */; };
+		OBJ_138 /* Directory.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Directory.swift */; };
+		OBJ_139 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* File.swift */; };
+		OBJ_140 /* FilesOrchestrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* FilesOrchestrator.swift */; };
+		OBJ_141 /* BatteryStatusProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* BatteryStatusProvider.swift */; };
+		OBJ_142 /* CarrierInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* CarrierInfoProvider.swift */; };
+		OBJ_143 /* MobileDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* MobileDevice.swift */; };
+		OBJ_144 /* NetworkConnectionInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* NetworkConnectionInfoProvider.swift */; };
+		OBJ_145 /* DataUploadConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* DataUploadConditions.swift */; };
+		OBJ_146 /* DataUploadDelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* DataUploadDelay.swift */; };
+		OBJ_147 /* DataUploadWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* DataUploadWorker.swift */; };
+		OBJ_148 /* DataUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* DataUploader.swift */; };
+		OBJ_149 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* HTTPClient.swift */; };
+		OBJ_150 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* HTTPHeaders.swift */; };
+		OBJ_151 /* EncodableValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* EncodableValue.swift */; };
+		OBJ_152 /* Datadog.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* Datadog.swift */; };
+		OBJ_153 /* DatadogConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* DatadogConfiguration.swift */; };
+		OBJ_154 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Logger.swift */; };
+		OBJ_155 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* UserInfo.swift */; };
+		OBJ_156 /* LogBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* LogBuilder.swift */; };
+		OBJ_157 /* LogEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* LogEncoder.swift */; };
+		OBJ_158 /* LogSanitizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* LogSanitizer.swift */; };
+		OBJ_159 /* LogConsoleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* LogConsoleOutput.swift */; };
+		OBJ_160 /* LogFileOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* LogFileOutput.swift */; };
+		OBJ_161 /* LogOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* LogOutput.swift */; };
+		OBJ_162 /* LogUtilityOutputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* LogUtilityOutputs.swift */; };
+		OBJ_163 /* LogsPersistenceStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* LogsPersistenceStrategy.swift */; };
+		OBJ_164 /* LogsUploadStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* LogsUploadStrategy.swift */; };
+		OBJ_165 /* CompilationConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* CompilationConditions.swift */; };
+		OBJ_166 /* InternalLoggers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* InternalLoggers.swift */; };
+		OBJ_167 /* SwiftExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* SwiftExtensions.swift */; };
+		OBJ_174 /* Datadog+objc.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* Datadog+objc.swift */; };
+		OBJ_175 /* DatadogConfiguration+objc.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* DatadogConfiguration+objc.swift */; };
+		OBJ_176 /* Logger+objc.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* Logger+objc.swift */; };
+		OBJ_177 /* AnyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* AnyEncodable.swift */; };
+		OBJ_179 /* Datadog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Datadog::Datadog::Product" /* Datadog.framework */; };
+		OBJ_186 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_197 /* FileReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* FileReaderTests.swift */; };
+		OBJ_198 /* FileWriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* FileWriterTests.swift */; };
+		OBJ_199 /* DirectoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* DirectoryTests.swift */; };
+		OBJ_200 /* FileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* FileTests.swift */; };
+		OBJ_201 /* FilesOrchestratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* FilesOrchestratorTests.swift */; };
+		OBJ_202 /* BatteryStatusProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* BatteryStatusProviderTests.swift */; };
+		OBJ_203 /* CarrierInfoProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* CarrierInfoProviderTests.swift */; };
+		OBJ_204 /* MobileDeviceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* MobileDeviceTests.swift */; };
+		OBJ_205 /* NetworkConnectionInfoProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* NetworkConnectionInfoProviderTests.swift */; };
+		OBJ_206 /* DataUploadConditionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* DataUploadConditionsTests.swift */; };
+		OBJ_207 /* DataUploadWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* DataUploadWorkerTests.swift */; };
+		OBJ_208 /* DataUploaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* DataUploaderTests.swift */; };
+		OBJ_209 /* HTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* HTTPClientTests.swift */; };
+		OBJ_210 /* HTTPHeadersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* HTTPHeadersTests.swift */; };
+		OBJ_211 /* LogsUploadDelayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* LogsUploadDelayTests.swift */; };
+		OBJ_212 /* DatadogConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* DatadogConfigurationTests.swift */; };
+		OBJ_213 /* DatadogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* DatadogTests.swift */; };
+		OBJ_214 /* LoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* LoggerTests.swift */; };
+		OBJ_215 /* LogBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* LogBuilderTests.swift */; };
+		OBJ_216 /* LogSanitizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* LogSanitizerTests.swift */; };
+		OBJ_217 /* LogConsoleOutputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* LogConsoleOutputTests.swift */; };
+		OBJ_218 /* LogFileOutputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* LogFileOutputTests.swift */; };
+		OBJ_219 /* LogUtilityOutputsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* LogUtilityOutputsTests.swift */; };
+		OBJ_220 /* CoreTelephonyMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_94 /* CoreTelephonyMocks.swift */; };
+		OBJ_221 /* DatadogMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_95 /* DatadogMocks.swift */; };
+		OBJ_222 /* DatadogObjcMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_96 /* DatadogObjcMocks.swift */; };
+		OBJ_223 /* FoundationMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_97 /* FoundationMocks.swift */; };
+		OBJ_224 /* LogsMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_98 /* LogsMocks.swift */; };
+		OBJ_225 /* NetworkMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_99 /* NetworkMocks.swift */; };
+		OBJ_226 /* UIKitMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_100 /* UIKitMocks.swift */; };
+		OBJ_227 /* InternalLoggersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_102 /* InternalLoggersTests.swift */; };
+		OBJ_228 /* DDConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_104 /* DDConfigurationTests.swift */; };
+		OBJ_229 /* DDDatadogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_105 /* DDDatadogTests.swift */; };
+		OBJ_230 /* DDLoggerBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_106 /* DDLoggerBuilderTests.swift */; };
+		OBJ_231 /* DDLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_107 /* DDLoggerTests.swift */; };
+		OBJ_232 /* DatadogExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_109 /* DatadogExtensions.swift */; };
+		OBJ_233 /* SwiftExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_110 /* SwiftExtensions.swift */; };
+		OBJ_234 /* TestsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_111 /* TestsDirectory.swift */; };
+		OBJ_235 /* LogMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_113 /* LogMatcher.swift */; };
+		OBJ_237 /* DatadogObjc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Datadog::DatadogObjc::Product" /* DatadogObjc.framework */; };
+		OBJ_238 /* Datadog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Datadog::Datadog::Product" /* Datadog.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF76255B241AA281000A8F40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Datadog::Datadog";
+			remoteInfo = Datadog;
+		};
+		BF76255C241AA281000A8F40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Datadog::DatadogObjc";
+			remoteInfo = DatadogObjc;
+		};
+		BF76255D241AA281000A8F40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Datadog::Datadog";
+			remoteInfo = Datadog;
+		};
+		BF76255E241AA284000A8F40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Datadog::DatadogTests";
+			remoteInfo = DatadogTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		"Datadog::Datadog::Product" /* Datadog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Datadog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Datadog::DatadogObjc::Product" /* DatadogObjc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DatadogObjc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Datadog::DatadogTests::Product" /* DatadogTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = DatadogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_100 /* UIKitMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitMocks.swift; sourceTree = "<group>"; };
+		OBJ_102 /* InternalLoggersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalLoggersTests.swift; sourceTree = "<group>"; };
+		OBJ_104 /* DDConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDConfigurationTests.swift; sourceTree = "<group>"; };
+		OBJ_105 /* DDDatadogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDDatadogTests.swift; sourceTree = "<group>"; };
+		OBJ_106 /* DDLoggerBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDLoggerBuilderTests.swift; sourceTree = "<group>"; };
+		OBJ_107 /* DDLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDLoggerTests.swift; sourceTree = "<group>"; };
+		OBJ_109 /* DatadogExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatadogExtensions.swift; sourceTree = "<group>"; };
+		OBJ_11 /* DateProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateProvider.swift; sourceTree = "<group>"; };
+		OBJ_110 /* SwiftExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExtensions.swift; sourceTree = "<group>"; };
+		OBJ_111 /* TestsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsDirectory.swift; sourceTree = "<group>"; };
+		OBJ_113 /* LogMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogMatcher.swift; sourceTree = "<group>"; };
+		OBJ_118 /* tools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tools; sourceTree = SOURCE_ROOT; };
+		OBJ_119 /* dependency-manager-tests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "dependency-manager-tests"; sourceTree = SOURCE_ROOT; };
+		OBJ_12 /* FileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
+		OBJ_120 /* instrumented-tests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "instrumented-tests"; sourceTree = SOURCE_ROOT; };
+		OBJ_121 /* examples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = examples; sourceTree = SOURCE_ROOT; };
+		OBJ_122 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_123 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		OBJ_124 /* Datadog.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Datadog.xcconfig; sourceTree = "<group>"; };
+		OBJ_125 /* NOTICE */ = {isa = PBXFileReference; lastKnownFileType = text; path = NOTICE; sourceTree = "<group>"; };
+		OBJ_126 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_127 /* Datadog.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Datadog.podspec; sourceTree = "<group>"; };
+		OBJ_128 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		OBJ_129 /* DatadogObjc.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = DatadogObjc.podspec; sourceTree = "<group>"; };
+		OBJ_13 /* FileWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWriter.swift; sourceTree = "<group>"; };
+		OBJ_15 /* Directory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Directory.swift; sourceTree = "<group>"; };
+		OBJ_16 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		OBJ_17 /* FilesOrchestrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesOrchestrator.swift; sourceTree = "<group>"; };
+		OBJ_19 /* BatteryStatusProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryStatusProvider.swift; sourceTree = "<group>"; };
+		OBJ_20 /* CarrierInfoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierInfoProvider.swift; sourceTree = "<group>"; };
+		OBJ_21 /* MobileDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDevice.swift; sourceTree = "<group>"; };
+		OBJ_22 /* NetworkConnectionInfoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnectionInfoProvider.swift; sourceTree = "<group>"; };
+		OBJ_24 /* DataUploadConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUploadConditions.swift; sourceTree = "<group>"; };
+		OBJ_25 /* DataUploadDelay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUploadDelay.swift; sourceTree = "<group>"; };
+		OBJ_26 /* DataUploadWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUploadWorker.swift; sourceTree = "<group>"; };
+		OBJ_27 /* DataUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUploader.swift; sourceTree = "<group>"; };
+		OBJ_28 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		OBJ_29 /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
+		OBJ_31 /* EncodableValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableValue.swift; sourceTree = "<group>"; };
+		OBJ_32 /* Datadog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datadog.swift; sourceTree = "<group>"; };
+		OBJ_33 /* DatadogConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatadogConfiguration.swift; sourceTree = "<group>"; };
+		OBJ_34 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		OBJ_37 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		OBJ_39 /* LogBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogBuilder.swift; sourceTree = "<group>"; };
+		OBJ_40 /* LogEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEncoder.swift; sourceTree = "<group>"; };
+		OBJ_41 /* LogSanitizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogSanitizer.swift; sourceTree = "<group>"; };
+		OBJ_43 /* LogConsoleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogConsoleOutput.swift; sourceTree = "<group>"; };
+		OBJ_44 /* LogFileOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFileOutput.swift; sourceTree = "<group>"; };
+		OBJ_45 /* LogOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutput.swift; sourceTree = "<group>"; };
+		OBJ_46 /* LogUtilityOutputs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogUtilityOutputs.swift; sourceTree = "<group>"; };
+		OBJ_47 /* LogsPersistenceStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsPersistenceStrategy.swift; sourceTree = "<group>"; };
+		OBJ_48 /* LogsUploadStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsUploadStrategy.swift; sourceTree = "<group>"; };
+		OBJ_50 /* CompilationConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompilationConditions.swift; sourceTree = "<group>"; };
+		OBJ_51 /* InternalLoggers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalLoggers.swift; sourceTree = "<group>"; };
+		OBJ_52 /* SwiftExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExtensions.swift; sourceTree = "<group>"; };
+		OBJ_54 /* Datadog+objc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Datadog+objc.swift"; sourceTree = "<group>"; };
+		OBJ_55 /* DatadogConfiguration+objc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatadogConfiguration+objc.swift"; sourceTree = "<group>"; };
+		OBJ_56 /* Logger+objc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+objc.swift"; sourceTree = "<group>"; };
+		OBJ_58 /* AnyEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyEncodable.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_64 /* FileReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReaderTests.swift; sourceTree = "<group>"; };
+		OBJ_65 /* FileWriterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWriterTests.swift; sourceTree = "<group>"; };
+		OBJ_67 /* DirectoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryTests.swift; sourceTree = "<group>"; };
+		OBJ_68 /* FileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileTests.swift; sourceTree = "<group>"; };
+		OBJ_69 /* FilesOrchestratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesOrchestratorTests.swift; sourceTree = "<group>"; };
+		OBJ_71 /* BatteryStatusProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryStatusProviderTests.swift; sourceTree = "<group>"; };
+		OBJ_72 /* CarrierInfoProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierInfoProviderTests.swift; sourceTree = "<group>"; };
+		OBJ_73 /* MobileDeviceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDeviceTests.swift; sourceTree = "<group>"; };
+		OBJ_74 /* NetworkConnectionInfoProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnectionInfoProviderTests.swift; sourceTree = "<group>"; };
+		OBJ_76 /* DataUploadConditionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUploadConditionsTests.swift; sourceTree = "<group>"; };
+		OBJ_77 /* DataUploadWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUploadWorkerTests.swift; sourceTree = "<group>"; };
+		OBJ_78 /* DataUploaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUploaderTests.swift; sourceTree = "<group>"; };
+		OBJ_79 /* HTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientTests.swift; sourceTree = "<group>"; };
+		OBJ_80 /* HTTPHeadersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeadersTests.swift; sourceTree = "<group>"; };
+		OBJ_81 /* LogsUploadDelayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsUploadDelayTests.swift; sourceTree = "<group>"; };
+		OBJ_82 /* DatadogConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatadogConfigurationTests.swift; sourceTree = "<group>"; };
+		OBJ_83 /* DatadogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatadogTests.swift; sourceTree = "<group>"; };
+		OBJ_84 /* LoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerTests.swift; sourceTree = "<group>"; };
+		OBJ_87 /* LogBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogBuilderTests.swift; sourceTree = "<group>"; };
+		OBJ_88 /* LogSanitizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogSanitizerTests.swift; sourceTree = "<group>"; };
+		OBJ_90 /* LogConsoleOutputTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogConsoleOutputTests.swift; sourceTree = "<group>"; };
+		OBJ_91 /* LogFileOutputTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFileOutputTests.swift; sourceTree = "<group>"; };
+		OBJ_92 /* LogUtilityOutputsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogUtilityOutputsTests.swift; sourceTree = "<group>"; };
+		OBJ_94 /* CoreTelephonyMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTelephonyMocks.swift; sourceTree = "<group>"; };
+		OBJ_95 /* DatadogMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatadogMocks.swift; sourceTree = "<group>"; };
+		OBJ_96 /* DatadogObjcMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatadogObjcMocks.swift; sourceTree = "<group>"; };
+		OBJ_97 /* FoundationMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationMocks.swift; sourceTree = "<group>"; };
+		OBJ_98 /* LogsMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsMocks.swift; sourceTree = "<group>"; };
+		OBJ_99 /* NetworkMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMocks.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_168 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_178 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_179 /* Datadog.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_236 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_237 /* DatadogObjc.framework in Frameworks */,
+				OBJ_238 /* Datadog.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_10 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_11 /* DateProvider.swift */,
+				OBJ_12 /* FileReader.swift */,
+				OBJ_13 /* FileWriter.swift */,
+				OBJ_14 /* Files */,
+				OBJ_17 /* FilesOrchestrator.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		OBJ_101 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_102 /* InternalLoggersTests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		OBJ_103 /* DatadogObjc */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_104 /* DDConfigurationTests.swift */,
+				OBJ_105 /* DDDatadogTests.swift */,
+				OBJ_106 /* DDLoggerBuilderTests.swift */,
+				OBJ_107 /* DDLoggerTests.swift */,
+			);
+			path = DatadogObjc;
+			sourceTree = "<group>";
+		};
+		OBJ_108 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_109 /* DatadogExtensions.swift */,
+				OBJ_110 /* SwiftExtensions.swift */,
+				OBJ_111 /* TestsDirectory.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		OBJ_112 /* Matchers */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_113 /* LogMatcher.swift */,
+			);
+			path = Matchers;
+			sourceTree = "<group>";
+		};
+		OBJ_114 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"Datadog::DatadogObjc::Product" /* DatadogObjc.framework */,
+				"Datadog::Datadog::Product" /* Datadog.framework */,
+				"Datadog::DatadogTests::Product" /* DatadogTests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_14 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_15 /* Directory.swift */,
+				OBJ_16 /* File.swift */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		OBJ_18 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_19 /* BatteryStatusProvider.swift */,
+				OBJ_20 /* CarrierInfoProvider.swift */,
+				OBJ_21 /* MobileDevice.swift */,
+				OBJ_22 /* NetworkConnectionInfoProvider.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		OBJ_23 /* Upload */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_24 /* DataUploadConditions.swift */,
+				OBJ_25 /* DataUploadDelay.swift */,
+				OBJ_26 /* DataUploadWorker.swift */,
+				OBJ_27 /* DataUploader.swift */,
+				OBJ_28 /* HTTPClient.swift */,
+				OBJ_29 /* HTTPHeaders.swift */,
+			);
+			path = Upload;
+			sourceTree = "<group>";
+		};
+		OBJ_30 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_31 /* EncodableValue.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		OBJ_35 /* Logs */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_36 /* Attributes */,
+				OBJ_38 /* Log */,
+				OBJ_42 /* LogOutputs */,
+				OBJ_47 /* LogsPersistenceStrategy.swift */,
+				OBJ_48 /* LogsUploadStrategy.swift */,
+			);
+			path = Logs;
+			sourceTree = "<group>";
+		};
+		OBJ_36 /* Attributes */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_37 /* UserInfo.swift */,
+			);
+			path = Attributes;
+			sourceTree = "<group>";
+		};
+		OBJ_38 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_39 /* LogBuilder.swift */,
+				OBJ_40 /* LogEncoder.swift */,
+				OBJ_41 /* LogSanitizer.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		OBJ_42 /* LogOutputs */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_43 /* LogConsoleOutput.swift */,
+				OBJ_44 /* LogFileOutput.swift */,
+				OBJ_45 /* LogOutput.swift */,
+				OBJ_46 /* LogUtilityOutputs.swift */,
+			);
+			path = LogOutputs;
+			sourceTree = "<group>";
+		};
+		OBJ_49 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_50 /* CompilationConditions.swift */,
+				OBJ_51 /* InternalLoggers.swift */,
+				OBJ_52 /* SwiftExtensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_59 /* Tests */,
+				OBJ_114 /* Products */,
+				OBJ_118 /* tools */,
+				OBJ_119 /* dependency-manager-tests */,
+				OBJ_120 /* instrumented-tests */,
+				OBJ_121 /* examples */,
+				OBJ_122 /* LICENSE */,
+				OBJ_123 /* Makefile */,
+				OBJ_124 /* Datadog.xcconfig */,
+				OBJ_125 /* NOTICE */,
+				OBJ_126 /* README.md */,
+				OBJ_127 /* Datadog.podspec */,
+				OBJ_128 /* CONTRIBUTING.md */,
+				OBJ_129 /* DatadogObjc.podspec */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_53 /* DatadogObjc */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_54 /* Datadog+objc.swift */,
+				OBJ_55 /* DatadogConfiguration+objc.swift */,
+				OBJ_56 /* Logger+objc.swift */,
+				OBJ_57 /* ObjcIntercompatibility */,
+			);
+			name = DatadogObjc;
+			path = Sources/DatadogObjc;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_57 /* ObjcIntercompatibility */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_58 /* AnyEncodable.swift */,
+			);
+			path = ObjcIntercompatibility;
+			sourceTree = "<group>";
+		};
+		OBJ_59 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_60 /* DatadogTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_60 /* DatadogTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_61 /* Datadog */,
+				OBJ_103 /* DatadogObjc */,
+				OBJ_108 /* Helpers */,
+				OBJ_112 /* Matchers */,
+			);
+			name = DatadogTests;
+			path = Tests/DatadogTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_61 /* Datadog */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_62 /* Core */,
+				OBJ_82 /* DatadogConfigurationTests.swift */,
+				OBJ_83 /* DatadogTests.swift */,
+				OBJ_84 /* LoggerTests.swift */,
+				OBJ_85 /* Logs */,
+				OBJ_93 /* Mocks */,
+				OBJ_101 /* Utils */,
+			);
+			path = Datadog;
+			sourceTree = "<group>";
+		};
+		OBJ_62 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_63 /* Persistence */,
+				OBJ_70 /* System */,
+				OBJ_75 /* Upload */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		OBJ_63 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_64 /* FileReaderTests.swift */,
+				OBJ_65 /* FileWriterTests.swift */,
+				OBJ_66 /* Files */,
+				OBJ_69 /* FilesOrchestratorTests.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		OBJ_66 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_67 /* DirectoryTests.swift */,
+				OBJ_68 /* FileTests.swift */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* Datadog */,
+				OBJ_53 /* DatadogObjc */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_70 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_71 /* BatteryStatusProviderTests.swift */,
+				OBJ_72 /* CarrierInfoProviderTests.swift */,
+				OBJ_73 /* MobileDeviceTests.swift */,
+				OBJ_74 /* NetworkConnectionInfoProviderTests.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		OBJ_75 /* Upload */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_76 /* DataUploadConditionsTests.swift */,
+				OBJ_77 /* DataUploadWorkerTests.swift */,
+				OBJ_78 /* DataUploaderTests.swift */,
+				OBJ_79 /* HTTPClientTests.swift */,
+				OBJ_80 /* HTTPHeadersTests.swift */,
+				OBJ_81 /* LogsUploadDelayTests.swift */,
+			);
+			path = Upload;
+			sourceTree = "<group>";
+		};
+		OBJ_8 /* Datadog */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Core */,
+				OBJ_32 /* Datadog.swift */,
+				OBJ_33 /* DatadogConfiguration.swift */,
+				OBJ_34 /* Logger.swift */,
+				OBJ_35 /* Logs */,
+				OBJ_49 /* Utils */,
+			);
+			name = Datadog;
+			path = Sources/Datadog;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_85 /* Logs */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_86 /* Log */,
+				OBJ_89 /* LogOutputs */,
+			);
+			path = Logs;
+			sourceTree = "<group>";
+		};
+		OBJ_86 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_87 /* LogBuilderTests.swift */,
+				OBJ_88 /* LogSanitizerTests.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		OBJ_89 /* LogOutputs */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_90 /* LogConsoleOutputTests.swift */,
+				OBJ_91 /* LogFileOutputTests.swift */,
+				OBJ_92 /* LogUtilityOutputsTests.swift */,
+			);
+			path = LogOutputs;
+			sourceTree = "<group>";
+		};
+		OBJ_9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_10 /* Persistence */,
+				OBJ_18 /* System */,
+				OBJ_23 /* Upload */,
+				OBJ_30 /* Utils */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		OBJ_93 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_94 /* CoreTelephonyMocks.swift */,
+				OBJ_95 /* DatadogMocks.swift */,
+				OBJ_96 /* DatadogObjcMocks.swift */,
+				OBJ_97 /* FoundationMocks.swift */,
+				OBJ_98 /* LogsMocks.swift */,
+				OBJ_99 /* NetworkMocks.swift */,
+				OBJ_100 /* UIKitMocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"Datadog::Datadog" /* Datadog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_131 /* Build configuration list for PBXNativeTarget "Datadog" */;
+			buildPhases = (
+				OBJ_134 /* Sources */,
+				OBJ_168 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Datadog;
+			productName = Datadog;
+			productReference = "Datadog::Datadog::Product" /* Datadog.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Datadog::DatadogObjc" /* DatadogObjc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_170 /* Build configuration list for PBXNativeTarget "DatadogObjc" */;
+			buildPhases = (
+				OBJ_173 /* Sources */,
+				OBJ_178 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_180 /* PBXTargetDependency */,
+			);
+			name = DatadogObjc;
+			productName = DatadogObjc;
+			productReference = "Datadog::DatadogObjc::Product" /* DatadogObjc.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Datadog::DatadogTests" /* DatadogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_193 /* Build configuration list for PBXNativeTarget "DatadogTests" */;
+			buildPhases = (
+				OBJ_196 /* Sources */,
+				OBJ_236 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_239 /* PBXTargetDependency */,
+				OBJ_240 /* PBXTargetDependency */,
+			);
+			name = DatadogTests;
+			productName = DatadogTests;
+			productReference = "Datadog::DatadogTests::Product" /* DatadogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"Datadog::SwiftPMPackageDescription" /* DatadogPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_182 /* Build configuration list for PBXNativeTarget "DatadogPackageDescription" */;
+			buildPhases = (
+				OBJ_185 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DatadogPackageDescription;
+			productName = DatadogPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Datadog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_114 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"Datadog::Datadog" /* Datadog */,
+				"Datadog::DatadogObjc" /* DatadogObjc */,
+				"Datadog::SwiftPMPackageDescription" /* DatadogPackageDescription */,
+				"Datadog::DatadogPackageTests::ProductTarget" /* DatadogPackageTests */,
+				"Datadog::DatadogTests" /* DatadogTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_134 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_135 /* DateProvider.swift in Sources */,
+				OBJ_136 /* FileReader.swift in Sources */,
+				OBJ_137 /* FileWriter.swift in Sources */,
+				OBJ_138 /* Directory.swift in Sources */,
+				OBJ_139 /* File.swift in Sources */,
+				OBJ_140 /* FilesOrchestrator.swift in Sources */,
+				OBJ_141 /* BatteryStatusProvider.swift in Sources */,
+				OBJ_142 /* CarrierInfoProvider.swift in Sources */,
+				OBJ_143 /* MobileDevice.swift in Sources */,
+				OBJ_144 /* NetworkConnectionInfoProvider.swift in Sources */,
+				OBJ_145 /* DataUploadConditions.swift in Sources */,
+				OBJ_146 /* DataUploadDelay.swift in Sources */,
+				OBJ_147 /* DataUploadWorker.swift in Sources */,
+				OBJ_148 /* DataUploader.swift in Sources */,
+				OBJ_149 /* HTTPClient.swift in Sources */,
+				OBJ_150 /* HTTPHeaders.swift in Sources */,
+				OBJ_151 /* EncodableValue.swift in Sources */,
+				OBJ_152 /* Datadog.swift in Sources */,
+				OBJ_153 /* DatadogConfiguration.swift in Sources */,
+				OBJ_154 /* Logger.swift in Sources */,
+				OBJ_155 /* UserInfo.swift in Sources */,
+				OBJ_156 /* LogBuilder.swift in Sources */,
+				OBJ_157 /* LogEncoder.swift in Sources */,
+				OBJ_158 /* LogSanitizer.swift in Sources */,
+				OBJ_159 /* LogConsoleOutput.swift in Sources */,
+				OBJ_160 /* LogFileOutput.swift in Sources */,
+				OBJ_161 /* LogOutput.swift in Sources */,
+				OBJ_162 /* LogUtilityOutputs.swift in Sources */,
+				OBJ_163 /* LogsPersistenceStrategy.swift in Sources */,
+				OBJ_164 /* LogsUploadStrategy.swift in Sources */,
+				OBJ_165 /* CompilationConditions.swift in Sources */,
+				OBJ_166 /* InternalLoggers.swift in Sources */,
+				OBJ_167 /* SwiftExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_173 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_174 /* Datadog+objc.swift in Sources */,
+				OBJ_175 /* DatadogConfiguration+objc.swift in Sources */,
+				OBJ_176 /* Logger+objc.swift in Sources */,
+				OBJ_177 /* AnyEncodable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_185 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_186 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_196 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_197 /* FileReaderTests.swift in Sources */,
+				OBJ_198 /* FileWriterTests.swift in Sources */,
+				OBJ_199 /* DirectoryTests.swift in Sources */,
+				OBJ_200 /* FileTests.swift in Sources */,
+				OBJ_201 /* FilesOrchestratorTests.swift in Sources */,
+				OBJ_202 /* BatteryStatusProviderTests.swift in Sources */,
+				OBJ_203 /* CarrierInfoProviderTests.swift in Sources */,
+				OBJ_204 /* MobileDeviceTests.swift in Sources */,
+				OBJ_205 /* NetworkConnectionInfoProviderTests.swift in Sources */,
+				OBJ_206 /* DataUploadConditionsTests.swift in Sources */,
+				OBJ_207 /* DataUploadWorkerTests.swift in Sources */,
+				OBJ_208 /* DataUploaderTests.swift in Sources */,
+				OBJ_209 /* HTTPClientTests.swift in Sources */,
+				OBJ_210 /* HTTPHeadersTests.swift in Sources */,
+				OBJ_211 /* LogsUploadDelayTests.swift in Sources */,
+				OBJ_212 /* DatadogConfigurationTests.swift in Sources */,
+				OBJ_213 /* DatadogTests.swift in Sources */,
+				OBJ_214 /* LoggerTests.swift in Sources */,
+				OBJ_215 /* LogBuilderTests.swift in Sources */,
+				OBJ_216 /* LogSanitizerTests.swift in Sources */,
+				OBJ_217 /* LogConsoleOutputTests.swift in Sources */,
+				OBJ_218 /* LogFileOutputTests.swift in Sources */,
+				OBJ_219 /* LogUtilityOutputsTests.swift in Sources */,
+				OBJ_220 /* CoreTelephonyMocks.swift in Sources */,
+				OBJ_221 /* DatadogMocks.swift in Sources */,
+				OBJ_222 /* DatadogObjcMocks.swift in Sources */,
+				OBJ_223 /* FoundationMocks.swift in Sources */,
+				OBJ_224 /* LogsMocks.swift in Sources */,
+				OBJ_225 /* NetworkMocks.swift in Sources */,
+				OBJ_226 /* UIKitMocks.swift in Sources */,
+				OBJ_227 /* InternalLoggersTests.swift in Sources */,
+				OBJ_228 /* DDConfigurationTests.swift in Sources */,
+				OBJ_229 /* DDDatadogTests.swift in Sources */,
+				OBJ_230 /* DDLoggerBuilderTests.swift in Sources */,
+				OBJ_231 /* DDLoggerTests.swift in Sources */,
+				OBJ_232 /* DatadogExtensions.swift in Sources */,
+				OBJ_233 /* SwiftExtensions.swift in Sources */,
+				OBJ_234 /* TestsDirectory.swift in Sources */,
+				OBJ_235 /* LogMatcher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_180 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Datadog::Datadog" /* Datadog */;
+			targetProxy = BF76255B241AA281000A8F40 /* PBXContainerItemProxy */;
+		};
+		OBJ_191 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Datadog::DatadogTests" /* DatadogTests */;
+			targetProxy = BF76255E241AA284000A8F40 /* PBXContainerItemProxy */;
+		};
+		OBJ_239 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Datadog::DatadogObjc" /* DatadogObjc */;
+			targetProxy = BF76255C241AA281000A8F40 /* PBXContainerItemProxy */;
+		};
+		OBJ_240 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Datadog::Datadog" /* Datadog */;
+			targetProxy = BF76255D241AA281000A8F40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Datadog.xcodeproj/Datadog_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Datadog;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Datadog;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Datadog.xcodeproj/Datadog_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Datadog;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Datadog;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Datadog.xcodeproj/DatadogObjc_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = DatadogObjc;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = DatadogObjc;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_172 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Datadog.xcodeproj/DatadogObjc_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = DatadogObjc;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = DatadogObjc;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_183 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode11.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode11.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Datadog.xcodeproj/DatadogTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = DatadogTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Datadog.xcodeproj/DatadogTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = DatadogTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_131 /* Build configuration list for PBXNativeTarget "Datadog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_132 /* Debug */,
+				OBJ_133 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_170 /* Build configuration list for PBXNativeTarget "DatadogObjc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_171 /* Debug */,
+				OBJ_172 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_182 /* Build configuration list for PBXNativeTarget "DatadogPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_183 /* Debug */,
+				OBJ_184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_188 /* Build configuration list for PBXAggregateTarget "DatadogPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_189 /* Debug */,
+				OBJ_190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_193 /* Build configuration list for PBXNativeTarget "DatadogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_194 /* Debug */,
+				OBJ_195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "Datadog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
